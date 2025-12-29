@@ -21,16 +21,19 @@
                 <fieldset>
                     <legend> Your Details </legend>
                     <label for="name"> Fullname: </label>
-                    <input type="text" id="username" placeholder="firstname SURNAME">
+                    <input type="text" id="username" required placeholder="firstname SURNAME">
 
                     <label for="email"> Email: </label>
-                    <input type="email" id="usermail" placeholder="you@gmail.com">
+                    <input type="email" id="usermail" required placeholder="you@gmail.com">
 
                     <label for="phone"> Phone: </label>
                     <input type="number" id="userphone" placeholder="+234************">
 
                     <label for="location"> City, Country: </label>
                     <input type="text" id="userlocation" placeholder="Okada, Nigeria">
+
+                    <label for="message"> Message: </label>
+                    <textarea id="userquery" name="message" required placeholder="Your reason for contacting us"></textarea>
 
                     <label>
                         <input type= "checkbox" name="newsletter">
