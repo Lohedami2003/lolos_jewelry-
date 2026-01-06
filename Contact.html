@@ -12,39 +12,74 @@
                </ol>
         </nav>
 
-        <h1>CONTACT FORM</h1>
     </header><hr>
 
     <main>
-        
+        <h1>CONTACT FORM</h1>
             <form action="/submit-contact" method="post">
                 <fieldset>
                     <legend> Your Details </legend>
                     <label for="username"> Fullname: </label>
-                    <input type="text" id="username" name="name" required placeholder="firstname SURNAME">
+                    <input type="text" id="username" name="name" required placeholder="firstname SURNAME"><br><br>
 
                     <label for="usermail"> Email: </label>
-                    <input type="email" id="usermail" name="mail" required placeholder="you@gmail.com"><br><hr>
+                    <input type="email" id="usermail" name="mail" required placeholder="you@gmail.com"><br><br>
 
                     <label for="userphone"> Phone: </label>
-                    <input type="tel" id="userphone" name="phone" placeholder="+234************">
+                    <input type="tel" id="userphone" name="phone" required placeholder="+234************"><br><br>
 
-                    <label for="userlocation"> City, Country: </label>
-                    <input type="text" id="userlocation" name="location" placeholder="Okada, Nigeria"><br><hr>
+                    <label> Country: </label>
+                    <label>
+                        <input type="radio" name="Country" value="U.S.A"/> Guam
+                    </label>
+
+                    <label>
+                        <input type="radio" name="Country" value="Nigeria"/> Nigeria
+                    </label>
+
+                     <label>
+                        <input type="radio" name="Country" value="Japan"/> Hokkaido
+                    </label>
+
+                    <label>
+                        <input type="radio" name="Country" value="Korea"/> South Korea
+                    </label>
+                    
+                    
+                     <label>
+                        <input type="radio" name="Country" value="Other"/> other
+                    </label><br><br>
+
+                    
+                    <label> City:
+                        <select name="city" required>
+                            <option value="select"></option>
+                            <option value="Abuja"> F.C.T Abuja </option>
+                            <option value="Benin"> Benin City </option>
+                            <option value="Busan South Korea"> Busan </option>
+                            <option value="Dededo, Guam"> Dededo </option>
+                            <option value="Gwanju, South Korea"> Gwanju </option>
+                            <option value="Hagatana, Guam"> Hagatana </option>
+                            <option value="Hakodate, Japan"> Hakodate </option>
+                            <option value="Kushiro, Japan"> Kushiro </option>
+                            <option value="Other"> Other </option>
+                        </select>
+                    </label><br><br>
+
 
                     <label for="userquery"> Message: </label>
-                    <textarea id="userquery" name="message" name="query" required placeholder="Your reason for contacting us"></textarea>
+                    <textarea id="userquery" name="message" name="query" required placeholder="Your reason for contacting us"></textarea><br><br>
 
                     <label>
                         <input type= "checkbox" name="newsletter">
                         Subscribe to our newsletter.
-                    </label><hr>
+                    </label><br><br>
                 
                     <button type="submit"> Submit </button>
                     
                 </fieldset>
             </form>
-    </main><hr><br>
+    </main><br><hr>
 
     <footer>
             <p>&copy 2025 Lolo's Jewelry</p>
